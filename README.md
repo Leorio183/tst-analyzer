@@ -13,7 +13,7 @@
 ### 方式一：conda（推荐，GUI 依赖一次装好）
 
 ```bash
-git clone https://github.com/<your-name>/tst-analyzer.git
+git clone https://github.com/Leorio183/tst-analyzer.git
 cd tst-analyzer
 conda env create -f environment.yml
 conda activate tst-analyzer
