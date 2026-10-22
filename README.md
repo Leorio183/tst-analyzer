@@ -22,7 +22,7 @@ conda activate tst-analyzer
 ### 方式二：pip
 
 ```bash
-git clone https://github.com/<your-name>/tst-analyzer.git
+git clone https://github.com/Leorio183/tst-analyzer.git
 cd tst-analyzer
 pip install -e .
 ```
