@@ -1,0 +1,30 @@
+main:
+  push:
+    - docker:
+        image: python:3.11-slim
+      stages:
+        - name: install
+          script: |
+            python -m pip install --upgrade pip
+            pip install -e . --no-deps
+            pip install "numpy>=1.21" opencv-python-headless pytest
+
+        - name: test
+          script: |
+            python -m tst_analyzer --version
+            pytest test -q
+
+  pull_request:
+    - docker:
+        image: python:3.11-slim
+      stages:
+        - name: install
+          script: |
+            python -m pip install --upgrade pip
+            pip install -e . --no-deps
+            pip install "numpy>=1.21" opencv-python-headless pytest
+
+        - name: test
+          script: |
+            python -m tst_analyzer --version
+            pytest test -q

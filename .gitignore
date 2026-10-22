@@ -1,0 +1,41 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# ---- 虚拟环境 ----
+.venv/
+venv/
+env/
+.env
+
+# ---- 测试与缓存 ----
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ---- 编辑器 / 系统 ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- 实验数据与输出（不入库）----
+# 原始视频体积大且有伦理/隐私属性，只保留代码
+*.mp4
+*.avi
+*.mov
+*.mkv
+!docs/demo.mp4
+# 分析输出
+*_results.csv
+multi_mouse_tst_results.csv
+output*.mp4
+output*.avi

@@ -1,0 +1,12 @@
+name: tst-analyzer
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.21
+  # conda-forge 的 opencv 带 highgui，可弹窗显示视频/绘制 ROI
+  - opencv>=4.5
+  - pytest
+  - pip
+  - pip:
+      - -e .
